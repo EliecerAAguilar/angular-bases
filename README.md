@@ -1,6 +1,6 @@
 # Bases
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version *17.0.9* and [NodeJs](https://nodejs.org/en/blog/release/v20.10.0) *20.10.0*
 
 ## Development server
 
