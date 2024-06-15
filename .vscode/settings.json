@@ -1,0 +1,50 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/dist": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/dist": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/dist/**": true
+  },
+  "angular.experimental-ivy": true,
+  "angular.experimental-ivy-ngcc-in-memory": true,
+  "angular.experimental-ivy-apply-localize": true,
+  "angular.experimental-ivy-apply-diagnostics": true,
+  "angular.experimental-ivy-source-maps": true,
+  "angular.experimental-ivy-terser": true,
+  "angular.experimental-ivy-circular-dependencies": true,
+  "angular.experimental-ivy-strict-null-checks": true,
+  "angular.experimental-ivy-strict-metadata": true,
+  "angular.experimental-ivy-watch-helpers": true,
+  "angular.experimental-ivy-watch-mode": true,
+  "angular.experimental-ivy-watch-outfile": true,
+  "angular.experimental-ivy-watch-poll": true,
+  "angular.experimental-ivy-watch-delay": 500,
+  "angular.experimental-ivy-watch-max-age": 3600000,
+  "angular.experimental-ivy-watch-use-polling": true,
+  "angular.experimental-ivy-watch-use-native-events": true,
+  "angular.experimental-ivy-watch-use-chokidar": true,
+  "angular.experimental-ivy-watch-use-fsevents": true,
+  "angular.experimental-ivy-watch-use-anymatch": true,
+  "angular.experimental-ivy-watch-use-ignore": true,
+  "angular.experimental-ivy-watch-use-atomic-writes": true,
+  "angular.experimental-ivy-watch-use-follow-links": true,
+  "angular.experimental-ivy-watch-use-glob": true,
+  "angular.experimental-ivy-watch-use-dot-slash": true
+}

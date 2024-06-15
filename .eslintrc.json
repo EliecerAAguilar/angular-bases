@@ -1,0 +1,60 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "src/**/*.test.ts",
+    "src/frontend/generated/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "parserOptions": {
+        "project": [
+          "./tsconfig.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "plugins": ["angular-eslint"],
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {
+        "@typescript-eslint/strict-boolean-expressions": [
+          2,
+          {
+            "allowString" : false,
+            "allowNumber" : false
+          }
+        ],
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        "@angular-eslint/import-destructuring-spacing": "error",
+        "@angular-eslint/import-prefix-case": "error",
+        "@angular-eslint/import-prefix-matcher": "error",
+        "@angular-eslint/import-prefix-underscore": "error",
+        "@angular-eslint/import-prefix-unambiguous": "error",
+        "indent": ["error", 2],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"]
+      }
+    }
+  ]
+}
