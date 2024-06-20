@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './hero.component.css'
 })
 export class HeroComponent {
-
+  public name: string = 'ironMan';
+  public age: number = 45;
+  public capitalize(name: string): string {
+    return `${name.charAt(0).toUpperCase()}${name.slice(1)}`;
+  }
 }
