@@ -8,16 +8,5 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   public title : string  = 'Angular App';
-  public counter: number = 10;
 
-  public increment(value: number): void {
-    this.counter+=value;
-  }
-  public decrement(value: number): void {
-    this.counter-=value;
-  }
-
-  public reset(): void {
-    this.counter=10;
-  }
 }

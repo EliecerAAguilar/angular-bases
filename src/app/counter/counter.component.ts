@@ -2,8 +2,26 @@ import {Component} from "@angular/core";
 
 @Component({
   selector: 'app-counter',
-  template: `<h1>counter</h1>`
+  template: `
+    <h3>Contador : {{counter}}</h3>
+    <button (click)="increment(1)">+1</button>
+    <button (click)="reset()">reset</button>
+    <button (click)="decrement(1)">-1</button>
+  `
 })
 export class CounterComponent {
+  public counter:number = 10;
+
+  public increment(value: number): void {
+    this.counter+= value;
+  }
+
+  public decrement(value:number):void{
+    this.counter-= value;
+  }
+
+  public reset():void {
+    this.counter = 10;
+  }
 
 }
