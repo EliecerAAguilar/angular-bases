@@ -18,10 +18,18 @@ export class HeroComponent {
 
   changeHero(newName: string): void {
     this.name = newName;
+
   }
 
   changeAge(newAge: number): void {
     this.age = newAge;
   }
 
+  reset(): void {
+    this.age = 45;
+    this.name = 'ironMan';
+    // document.querySelectorAll('h1')?.forEach((element) => {
+    //   element.innerHTML = '<h1> desde angular </h1>';
+    // });
+  }
 }
